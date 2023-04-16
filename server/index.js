@@ -2,9 +2,6 @@ import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
 
-import Home from '../client/src/pages/Home.jsx';
-import CreatePost from '../client/src/pages/CreatePost.jsx';
-
 import connectDB from './mongodb/connect.js';
 import postRoutes from './routes/postRoutes.js';
 import AIIGroutes from './routes/AIIGroutes.js';
@@ -33,9 +30,6 @@ const startServer = async () => {
     }
 };
 
-export {
-    Home,
-    CreatePost
-}
+
 
 startServer();
